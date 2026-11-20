@@ -3,12 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Nota is a calm, private notepad that works offline. Your notes never leave your device." />
+    <title>Nota - Free Online Notepad, Works Offline</title>
+    <meta name="description" content="A free online notepad that works offline. No account, no ads. Your notes stay private on your device. Write, format and save as Markdown, text or PDF." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://online-notepad-free.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nota" />
+    <meta property="og:title" content="Nota - Free Online Notepad, Works Offline" />
+    <meta property="og:description" content="A free online notepad that works offline. No account, no ads. Your notes stay private on your device. Write, format and save as Markdown, text or PDF." />
+    <meta property="og:url" content="https://online-notepad-free.vercel.app/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Nota - Free Online Notepad, Works Offline" />
+    <meta name="twitter:description" content="A free online notepad that works offline. No account, no ads. Your notes stay private on your device. Write, format and save as Markdown, text or PDF." />
     <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#161615" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./icon-192.png" />
-    <title>Nota - a calm place to write</title>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Nota",
+  "alternateName": "Nota Online Notepad",
+  "url": "https://online-notepad-free.vercel.app/",
+  "description": "A free online notepad that works offline. No account, no ads. Your notes stay private on your device. Write, format and save as Markdown, text or PDF.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Works offline",
+    "No account or sign-up",
+    "Notes stay on your device",
+    "Headings, lists, to-do lists, links and code",
+    "Find and replace",
+    "Folders and pinned notes",
+    "Save as Markdown, plain text or PDF",
+    "Light and dark theme"
+  ]
+}
+    </script>
     <script>
       // Apply saved appearance before first paint to avoid a theme flash.
       try {
@@ -17,11 +57,34 @@
         if (s.theme === 'light' || s.theme === 'dark') r.setAttribute('data-theme', s.theme);
       } catch (e) {}
     </script>
-    <script type="module" crossorigin src="./assets/index-DV-HJJVs.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DvLOUL_N.css">
-  <link rel="manifest" href="./manifest.webmanifest"></head>
+    <style>
+      /* Shown to search engines and while the app loads. React replaces it once it starts. */
+      .intro { max-width: 620px; margin: 0 auto; padding: 8vh 24px; font: 16px/1.6 system-ui, sans-serif; color: #2a2926; }
+      .intro h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; }
+      .intro h2 { font-size: 17px; margin: 28px 0 8px; }
+      .intro ul { padding-left: 20px; }
+      @media (prefers-color-scheme: dark) { .intro { color: #e8e5de; } }
+    </style>
+  </head>
   <body>
-    <div id="root"></div>
-    <noscript>Nota needs JavaScript to run.</noscript>
+    <div id="root">
+      <main class="intro">
+        <h1>Nota: a free online notepad that works offline</h1>
+        <p>Write notes right in your browser. No account, no ads and no sign-up. Your notes stay on your device and keep working without internet.</p>
+        <h2>What you can do</h2>
+        <ul>
+          <li>Format text with headings, bold, italic, underline, highlight, links, to-do lists, quotes and code.</li>
+          <li>Find and replace inside a note.</li>
+          <li>Keep many notes, sort them into folders and pin the important ones.</li>
+          <li>Save any note as Markdown, plain text or PDF.</li>
+          <li>Pick a font, a text size, and a light or dark theme.</li>
+          <li>Back up all your notes to one file and restore them later.</li>
+        </ul>
+        <h2>Private by design</h2>
+        <p>Notes are saved in your browser on this device. Nothing is uploaded to a server. If you clear your browser data your notes are removed, so download a backup from the File menu now and then.</p>
+      </main>
+    </div>
+    <noscript>Nota needs JavaScript to write and save notes.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
